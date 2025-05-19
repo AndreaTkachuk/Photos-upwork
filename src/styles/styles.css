@@ -1,0 +1,389 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to bottom, #f3e8ff, #fff);
+  padding: 3rem 1rem;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6b21a8;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.12rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.steps-container {
+  margin-bottom: 2rem;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.steps-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #6b21a8;
+  margin-bottom: 0.5rem;
+}
+
+.steps-list {
+  list-style-position: inside;
+  padding-left: 1rem;
+  color: #4b5563;
+}
+
+.steps-list li {
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  background-color: #7e22ce;
+  color: white;
+  font-weight: 700;
+  height: max-content;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  font-size: 1.12rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background-color: #6b21a8;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button-sm {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+}
+
+.hero-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Countdown Timer */
+.countdown-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-label {
+  color: #4b5563;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.countdown-timer {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #6b21a8;
+}
+
+.countdown-timer-sm {
+  font-size: 1.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-label-sm {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.countdown-separator {
+  color: #7e22ce;
+}
+
+/* Trust Section */
+.trust-section {
+  padding: 3rem 1rem;
+  background-color: white;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-check {
+  margin-right: 0.5rem;
+  width: 28px;
+  color: #10b981;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.benefit-card {
+  background-color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.benefit-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  color: #7e22ce;
+  margin-bottom: 1rem;
+}
+
+.benefit-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-description {
+  color: #6b7280;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 3rem 1rem;
+  background-color: #f9fafb;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.testimonial-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+
+}
+
+.testimonial-name {
+  font-weight: 600;
+}
+
+.testimonial-stars {
+  display: flex;
+}
+
+.star-icon {
+  color: #fbbf24;
+}
+
+.testimonial-comment {
+  color: #6b7280;
+}
+
+.app-promo {
+  margin-bottom: 150px;
+  text-align: center;
+}
+
+.app-promo-text {
+  font-size: 1.12rem;
+  margin-bottom: 1rem;
+}
+
+.app-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.app-store-img {
+  height: 2.5rem;
+}
+
+/* Sticky Panel */
+.sticky-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #e5e7eb;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+
+.sticky-panel.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.sticky-panel-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  gap: 0.75rem;
+}
+
+.sticky-panel-info {
+  display: flex;
+  align-items: center;
+}
+
+.sticky-panel-icon {
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+  color: #7e22ce;
+}
+
+.sticky-panel-text {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.sticky-panel-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-section {
+    padding: 5rem 1rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sticky-panel-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+  }
+
+  .app-promo {
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 425px) {
+  .hero-box {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .sticky-panel-box {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+  }
+}
